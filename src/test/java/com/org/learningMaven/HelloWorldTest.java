@@ -7,7 +7,7 @@ public class HelloWorldTest {
 	public void Login() throws InterruptedException
 	{
 
-		System.out.println("Hello Test Baby1234");
+		System.out.println("Hello Test Baby");
 		
 	}
 
