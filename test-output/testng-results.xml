@@ -2,16 +2,26 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24" started-at="2017-06-28T10:31:20Z" finished-at="2017-06-28T10:31:20Z">
+  <suite name="Default suite" duration-ms="24" started-at="2017-07-03T10:38:17Z" finished-at="2017-07-03T10:38:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24" started-at="2017-06-28T10:31:20Z" finished-at="2017-06-28T10:31:20Z">
-      <class name="com.org.learningMaven.HelloWorldTest">
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.org.learningMaven.HelloWorldTest@d2cc05a]" name="Login" duration-ms="8" started-at="2017-06-28T16:01:20Z" finished-at="2017-06-28T16:01:20Z">
+    <test name="Default test" duration-ms="24" started-at="2017-07-03T10:38:17Z" finished-at="2017-07-03T10:38:17Z">
+      <class name="com.org.Functional.Tests.GlobalConfig">
+        <test-method status="PASS" signature="runApplication()[pri:0, instance:com.org.Functional.Tests.GlobalConfig@475530b9]" name="runApplication" is-config="true" duration-ms="6" started-at="2017-07-03T16:08:17Z" finished-at="2017-07-03T16:08:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-      </class> <!-- com.org.learningMaven.HelloWorldTest -->
+        </test-method> <!-- runApplication -->
+        <test-method status="PASS" signature="disposeDriver()[pri:0, instance:com.org.Functional.Tests.GlobalConfig@475530b9]" name="disposeDriver" is-config="true" duration-ms="0" started-at="2017-07-03T16:08:17Z" finished-at="2017-07-03T16:08:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disposeDriver -->
+      </class> <!-- com.org.Functional.Tests.GlobalConfig -->
+      <class name="com.org.Functional.Tests.Login">
+        <test-method status="PASS" signature="LoginToApplication()[pri:0, instance:com.org.Functional.Tests.Login@1d057a39]" name="LoginToApplication" duration-ms="4" started-at="2017-07-03T16:08:17Z" finished-at="2017-07-03T16:08:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginToApplication -->
+      </class> <!-- com.org.Functional.Tests.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
