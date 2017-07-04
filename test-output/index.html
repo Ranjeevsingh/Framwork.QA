@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\r.singh1.AGILECOCKPIT\AppData\Local\Temp\testng-eclipse--1790846127\testng-customsuite.xml</span>
+                    <span>C:\Users\r.singh1.AGILECOCKPIT\AppData\Local\Temp\testng-eclipse-1395255269\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -135,7 +135,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\r.singh1.AGILECOCKPIT\AppData\Local\Temp\testng-eclipse--1790846127\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\r.singh1.AGILECOCKPIT\AppData\Local\Temp\testng-eclipse-1395255269\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,12 +144,16 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.org.commonClasses.waitUtility&quot;/&gt;
+      &lt;class name=&quot;com.org.dataReadUtility.xmlUtils&quot;/&gt;
       &lt;class name=&quot;com.org.wrapperClasses.selenuimWrapperMethods&quot;/&gt;
+      &lt;class name=&quot;com.org.dataReadUtility.PropertiesUtils&quot;/&gt;
+      &lt;class name=&quot;com.org.dataReadUtility.ExcelUtils&quot;/&gt;
       &lt;class name=&quot;com.org.learningMaven.App&quot;/&gt;
       &lt;class name=&quot;com.org.Functional.Tests.Login&quot;/&gt;
       &lt;class name=&quot;com.org.commonClasses.browserUtility&quot;/&gt;
-      &lt;class name=&quot;com.org.Functional.Tests.GlobalConfig&quot;/&gt;
+      &lt;class name=&quot;com.org.dataReadUtility.jsonUtils&quot;/&gt;
+      &lt;class name=&quot;com.org.commonClasses.TestBase&quot;/&gt;
+      &lt;class name=&quot;com.org.dataReadUtility.dbUtils&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -163,7 +167,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (6 classes)</span>
+                <span class="test-name">Default test (10 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -193,12 +197,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginToApplication')
 data.setCell(0, 2, 'com.org.Functional.Tests.Login')
-data.setCell(0, 3, 4);
+data.setCell(0, 3, 14);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 ms</span>
+              <span class="suite-total-time">Total running time: 14 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -224,9 +228,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.org.Functional.Tests.GlobalConfig</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.org.commonClasses.TestBase</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">runApplication</span>
+                <span class="method-name">LaunchApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
@@ -234,14 +238,14 @@ return data;
               <div class="chronological-class-name">com.org.Functional.Tests.Login</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">LoginToApplication</span>
-                <span class="method-start">14 ms</span>
+                <span class="method-start">12388 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.org.Functional.Tests.GlobalConfig</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.org.commonClasses.TestBase</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">disposeDriver</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-start">12404 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

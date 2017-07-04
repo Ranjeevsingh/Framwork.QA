@@ -2,26 +2,26 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24" started-at="2017-07-03T10:38:17Z" finished-at="2017-07-03T10:38:17Z">
+  <suite name="Default suite" duration-ms="13278" started-at="2017-07-04T15:05:39Z" finished-at="2017-07-04T15:05:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24" started-at="2017-07-03T10:38:17Z" finished-at="2017-07-03T10:38:17Z">
-      <class name="com.org.Functional.Tests.GlobalConfig">
-        <test-method status="PASS" signature="runApplication()[pri:0, instance:com.org.Functional.Tests.GlobalConfig@475530b9]" name="runApplication" is-config="true" duration-ms="6" started-at="2017-07-03T16:08:17Z" finished-at="2017-07-03T16:08:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runApplication -->
-        <test-method status="PASS" signature="disposeDriver()[pri:0, instance:com.org.Functional.Tests.GlobalConfig@475530b9]" name="disposeDriver" is-config="true" duration-ms="0" started-at="2017-07-03T16:08:17Z" finished-at="2017-07-03T16:08:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disposeDriver -->
-      </class> <!-- com.org.Functional.Tests.GlobalConfig -->
+    <test name="Default test" duration-ms="13278" started-at="2017-07-04T15:05:39Z" finished-at="2017-07-04T15:05:52Z">
       <class name="com.org.Functional.Tests.Login">
-        <test-method status="PASS" signature="LoginToApplication()[pri:0, instance:com.org.Functional.Tests.Login@1d057a39]" name="LoginToApplication" duration-ms="4" started-at="2017-07-03T16:08:17Z" finished-at="2017-07-03T16:08:17Z">
+        <test-method status="PASS" signature="LoginToApplication()[pri:0, instance:com.org.Functional.Tests.Login@7d9d1a19]" name="LoginToApplication" duration-ms="14" started-at="2017-07-04T20:35:51Z" finished-at="2017-07-04T20:35:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToApplication -->
       </class> <!-- com.org.Functional.Tests.Login -->
+      <class name="com.org.commonClasses.TestBase">
+        <test-method status="PASS" signature="LaunchApplication()[pri:0, instance:com.org.commonClasses.TestBase@4883b407]" name="LaunchApplication" is-config="true" duration-ms="12375" started-at="2017-07-04T20:35:39Z" finished-at="2017-07-04T20:35:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method status="PASS" signature="disposeDriver()[pri:0, instance:com.org.commonClasses.TestBase@4883b407]" name="disposeDriver" is-config="true" duration-ms="870" started-at="2017-07-04T20:35:51Z" finished-at="2017-07-04T20:35:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disposeDriver -->
+      </class> <!-- com.org.commonClasses.TestBase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

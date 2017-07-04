@@ -1,28 +1,42 @@
 package com.org.commonClasses;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class browserUtility {
 	
-	public static WebDriver launchBrowser(String BrowserName)
+	public static WebDriver driver;
+	
+	public void launchBrowser(String BrowserName,String URL)
 		{		
 		if(BrowserName.toLowerCase().contains("firefox"))
 		{
-			return new FirefoxDriver();
+			driver= new FirefoxDriver();
 			
 		}
-		else {
-			System.out.println("Please provide a valid browser name.");
-			return null;
-		}
-		}
-	
-	public static void maximizeBrowser(WebDriver driver)
+		
+		else if (BrowserName.toLowerCase().contains("chrome"))
 		{
-		driver.manage().window().maximize();
+			System.setProperty("webdriver.chrome.driver","C:/Users/r.singh1.AGILECOCKPIT/git/origin/drivers/chromedriver.exe");
+			driver=new ChromeDriver();
+			
 		}
+		
+		else
+		{
+			System.out.println("Please provide a valid browser name.");
+		}
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.get(URL);
+	}
+	
+
 	
 	
 
