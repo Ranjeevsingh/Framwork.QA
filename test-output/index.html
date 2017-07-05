@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\r.singh1.AGILECOCKPIT\AppData\Local\Temp\testng-eclipse-143657091\testng-customsuite.xml</span>
+                    <span>C:\Users\r.singh1.AGILECOCKPIT\AppData\Local\Temp\testng-eclipse--445092228\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.org.Functional.Tests.Login" hash-for-method="LoginToApplication">LoginToApplication</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.org.Functional.Tests.Login" hash-for-method="CheckAppLandingPage">CheckAppLandingPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.org.Functional.Tests.Login" hash-for-method="CheckSuccessfulLogin">CheckSuccessfulLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -125,9 +130,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginToApplication">
-                  </a> <!-- LoginToApplication -->
-                  <span class="method-name">LoginToApplication</span>
+                  <a name="CheckAppLandingPage">
+                  </a> <!-- CheckAppLandingPage -->
+                  <span class="method-name">CheckAppLandingPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckSuccessfulLogin">
+                  </a> <!-- CheckSuccessfulLogin -->
+                  <span class="method-name">CheckSuccessfulLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +147,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\r.singh1.AGILECOCKPIT\AppData\Local\Temp\testng-eclipse-143657091\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\r.singh1.AGILECOCKPIT\AppData\Local\Temp\testng-eclipse--445092228\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -193,16 +205,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginToApplication')
+data.setCell(0, 1, 'CheckSuccessfulLogin')
 data.setCell(0, 2, 'com.org.Functional.Tests.Login')
-data.setCell(0, 3, 33);
+data.setCell(0, 3, 7202);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CheckAppLandingPage')
+data.setCell(1, 2, 'com.org.Functional.Tests.Login')
+data.setCell(1, 3, 13);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 ms</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -237,15 +253,19 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.org.Functional.Tests.Login</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">LoginToApplication</span>
-                <span class="method-start">12504 ms</span>
+                <span class="method-name">CheckAppLandingPage</span>
+                <span class="method-start">11830 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckSuccessfulLogin</span>
+                <span class="method-start">11844 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.org.commonClasses.TestBase</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">disposeDriver</span>
-                <span class="method-start">12539 ms</span>
+                <span class="method-start">19047 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

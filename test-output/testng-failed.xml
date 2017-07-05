@@ -5,7 +5,8 @@
     <classes>
       <class name="com.org.Functional.Tests.Login">
         <methods>
-          <include name="LoginToApplication"/>
+          <include name="CheckSuccessfulLogin"/>
+          <include name="CheckAppLandingPage"/>
         </methods>
       </class> <!-- com.org.Functional.Tests.Login -->
     </classes>
