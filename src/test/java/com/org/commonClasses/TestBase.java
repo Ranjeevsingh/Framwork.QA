@@ -4,6 +4,9 @@ package com.org.commonClasses;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import com.gargoylesoftware.htmlunit.javascript.host.URL;
+import com.org.dataReadUtility.readProperties;
+
 public class TestBase {
 	
 	browserUtility browserFactory=new browserUtility();
@@ -11,7 +14,7 @@ public class TestBase {
 	@BeforeTest
 	public void LaunchApplication(){
 		
-		browserFactory.launchBrowser("chrome", "https://live.agilecockpit.com");
+		browserFactory.launchBrowser(readProperties.readTestConfig("browser"), readProperties.readTestConfig("url"));
 		
 	}
 	

@@ -21,7 +21,7 @@ public class browserUtility {
 		
 		else if (BrowserName.toLowerCase().contains("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver","C:/Users/r.singh1.AGILECOCKPIT/git/origin/drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
 			driver=new ChromeDriver();
 			
 		}
