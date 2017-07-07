@@ -3,22 +3,23 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.org.commonClasses.browserUtility;
+import com.org.appLandingPage.AppLandingPage;
+import com.org.commonClasses.TestBase;
 
-public class Login {
-	
+
+public class Login extends TestBase{
+	AppLandingPage _appLandingPage;
 	@Test
 	public void CheckAppLandingPage() {
-		String title=browserUtility.driver.getTitle();
+		String title=driver.getTitle();
 		Assert.assertEquals(title, "Agile Cockpit Identity Server");
 	
 	}
 	@Test
 	public void CheckSuccessfulLogin() {
-		browserUtility.driver.findElement(By.name("UserName")).sendKeys("r.singh@prowareness.nl");
-		browserUtility.driver.findElement(By.name("Password")).sendKeys("Nov@2017");
-		browserUtility.driver.findElement(By.id("login-button")).click();
-		Assert.assertEquals(browserUtility.driver.findElement(By.linkText("Me")).getText(),"Me");
+		_appLandingPage=new AppLandingPage(driver);
+		_appLandingPage.loginToApplication("r.singh@prowareness.nl", "Nov@2017");
+		Assert.assertEquals(driver.findElement(By.linkText("Me")).getText(),"Me");
 	}
 
 }

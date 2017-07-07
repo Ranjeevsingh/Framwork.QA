@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class browserUtility {
 	
-	public WebDriver driver;
+	WebDriver driver;
 	
 	public WebDriver launchBrowser(String BrowserName,String URL)
 		{		

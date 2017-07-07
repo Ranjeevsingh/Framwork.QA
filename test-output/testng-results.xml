@@ -2,30 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19907" started-at="2017-07-05T14:50:16Z" finished-at="2017-07-05T14:50:35Z">
+  <suite name="Default suite" duration-ms="42905" started-at="2017-07-07T13:42:12Z" finished-at="2017-07-07T13:42:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19907" started-at="2017-07-05T14:50:16Z" finished-at="2017-07-05T14:50:35Z">
+    <test name="Default test" duration-ms="42905" started-at="2017-07-07T13:42:12Z" finished-at="2017-07-07T13:42:55Z">
       <class name="com.org.Functional.Tests.Login">
-        <test-method status="PASS" signature="CheckAppLandingPage()[pri:0, instance:com.org.Functional.Tests.Login@7d9d1a19]" name="CheckAppLandingPage" duration-ms="13" started-at="2017-07-05T20:20:27Z" finished-at="2017-07-05T20:20:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckAppLandingPage -->
-        <test-method status="PASS" signature="CheckSuccessfulLogin()[pri:0, instance:com.org.Functional.Tests.Login@7d9d1a19]" name="CheckSuccessfulLogin" duration-ms="7202" started-at="2017-07-05T20:20:27Z" finished-at="2017-07-05T20:20:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckSuccessfulLogin -->
-      </class> <!-- com.org.Functional.Tests.Login -->
-      <class name="com.org.commonClasses.TestBase">
-        <test-method status="PASS" signature="LaunchApplication()[pri:0, instance:com.org.commonClasses.TestBase@4883b407]" name="LaunchApplication" is-config="true" duration-ms="11816" started-at="2017-07-05T20:20:16Z" finished-at="2017-07-05T20:20:27Z">
+        <test-method status="PASS" signature="LaunchApplication()[pri:0, instance:com.org.Functional.Tests.Login@6d4b1c02]" name="LaunchApplication" is-config="true" duration-ms="12716" started-at="2017-07-07T19:12:12Z" finished-at="2017-07-07T19:12:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method status="PASS" signature="disposeDriver()[pri:0, instance:com.org.commonClasses.TestBase@4883b407]" name="disposeDriver" is-config="true" duration-ms="856" started-at="2017-07-05T20:20:35Z" finished-at="2017-07-05T20:20:35Z">
+        <test-method status="PASS" signature="CheckAppLandingPage()[pri:0, instance:com.org.Functional.Tests.Login@6d4b1c02]" name="CheckAppLandingPage" duration-ms="16" started-at="2017-07-07T19:12:25Z" finished-at="2017-07-07T19:12:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckAppLandingPage -->
+        <test-method status="PASS" signature="disposeDriver()[pri:0, instance:com.org.Functional.Tests.Login@6d4b1c02]" name="disposeDriver" is-config="true" duration-ms="1313" started-at="2017-07-07T19:12:25Z" finished-at="2017-07-07T19:12:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disposeDriver -->
-      </class> <!-- com.org.commonClasses.TestBase -->
+        <test-method status="PASS" signature="LaunchApplication()[pri:0, instance:com.org.Functional.Tests.Login@6d4b1c02]" name="LaunchApplication" is-config="true" duration-ms="14654" started-at="2017-07-07T19:12:26Z" finished-at="2017-07-07T19:12:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method status="PASS" signature="CheckSuccessfulLogin()[pri:0, instance:com.org.Functional.Tests.Login@6d4b1c02]" name="CheckSuccessfulLogin" duration-ms="13422" started-at="2017-07-07T19:12:41Z" finished-at="2017-07-07T19:12:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckSuccessfulLogin -->
+        <test-method status="PASS" signature="disposeDriver()[pri:0, instance:com.org.Functional.Tests.Login@6d4b1c02]" name="disposeDriver" is-config="true" duration-ms="765" started-at="2017-07-07T19:12:54Z" finished-at="2017-07-07T19:12:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disposeDriver -->
+      </class> <!-- com.org.Functional.Tests.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
