@@ -9,9 +9,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class browserUtility {
 	
-	public static WebDriver driver;
+	public WebDriver driver;
 	
-	public void launchBrowser(String BrowserName,String URL)
+	public WebDriver launchBrowser(String BrowserName,String URL)
 		{		
 		if(BrowserName.toLowerCase().contains("firefox"))
 		{
@@ -34,6 +34,7 @@ public class browserUtility {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.get(URL);
+		return driver;
 	}
 	
 
