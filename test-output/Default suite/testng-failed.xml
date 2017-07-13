@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.org.Functional.Tests.Login">
+      <class name="com.org.Functional.Tests.AppLandingTests">
         <methods>
           <include name="LaunchApplication"/>
-          <include name="CheckSuccessfulLogin"/>
           <include name="disposeDriver"/>
+          <include name="CheckSuccessfulLogin"/>
+          <include name="CheckAppLandingPage"/>
         </methods>
-      </class> <!-- com.org.Functional.Tests.Login -->
+      </class> <!-- com.org.Functional.Tests.AppLandingTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

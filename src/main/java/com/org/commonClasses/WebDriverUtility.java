@@ -7,11 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
-public class browserUtility {
+public class WebDriverUtility {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	
-	public WebDriver launchBrowser(String BrowserName,String URL)
+	public WebDriver launchBrowser(String BrowserName)
 		{		
 		if(BrowserName.toLowerCase().contains("firefox"))
 		{
@@ -30,15 +30,15 @@ public class browserUtility {
 		{
 			System.out.println("Please provide a valid browser name.");
 		}
-		
-		driver.manage().window().maximize();
+				
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		driver.get(URL);
 		return driver;
 	}
 	
-
 	
-	
+	public void maximizeWindow()
+	{
+		driver.manage().window().maximize();
+	}
 
 }

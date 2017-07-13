@@ -2,29 +2,31 @@ package com.org.commonClasses;
 
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-
-
 import com.org.dataReadUtility.readProperties;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+
+
 
 public class TestBase{
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 	
-	browserUtility browserFactory=new browserUtility();
+	WebDriverUtility browserFactory=new WebDriverUtility();
 	
 	
-	@BeforeMethod
+	@Before
 	public void LaunchApplication(){
 		
-		driver=browserFactory.launchBrowser(readProperties.readTestConfig("browser"), readProperties.readTestConfig("url"));
+		driver=browserFactory.launchBrowser(readProperties.readTestConfig("browser"));
+		browserFactory.maximizeWindow();
 		
 	}
 	
-	@AfterMethod
+	@After
 	public void disposeDriver(){
 		driver.quit();
+		driver=null;
 	}
 
 }

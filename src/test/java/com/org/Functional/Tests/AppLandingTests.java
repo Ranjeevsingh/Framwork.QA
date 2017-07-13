@@ -1,19 +1,13 @@
 package com.org.Functional.Tests;
-import org.openqa.selenium.By;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import com.org.commonClasses.TestBase;
-import com.org.pageFunctionLibrary.AppLandingPageMethods;
 
-
-public class AppLandingTests extends TestBase{
+public class AppLandingTests{
 	
 	
-	AppLandingPageMethods _appLandingPage;
+	//AppLandingPageMethods _appLandingPage=new AppLandingPageMethods(driver);
 	
 	
 	
-	@Test
+/*	@Test
 	public void CheckAppLandingPage() {
 		String title=driver.getTitle();
 		Assert.assertEquals(title, "Agile Cockpit Identity Server");
@@ -22,9 +16,9 @@ public class AppLandingTests extends TestBase{
 	
 	@Test
 	public void CheckSuccessfulLogin() {
-		_appLandingPage=new AppLandingPageMethods(driver);
+		
 		_appLandingPage.loginToApplication("r.singh@prowareness.nl", "Nov@2017");
 		Assert.assertEquals(driver.findElement(By.linkText("Me")).getText(),"Me");
 	}
-
+*/
 }
