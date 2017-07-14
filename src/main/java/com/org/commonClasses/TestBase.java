@@ -1,6 +1,5 @@
 package com.org.commonClasses;
 
-
 import org.openqa.selenium.WebDriver;
 import com.org.dataReadUtility.readProperties;
 import cucumber.api.java.After;

@@ -1,8 +1,6 @@
 package stepDefinitions;
 import com.org.commonClasses.TestBase;
 import com.org.pageFunctionLibrary.AppLandingPageMethods;
-
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -28,14 +26,12 @@ public class AppLandingPageStepDefinition{
 	@Then("^I validate user is successfully login to application$")
 	public void i_validate_user_is_successfully_login_to_application()
 	{
-	     //appLandingPageMethods.CheckSuccessfulLogin();
-		System.out.println("SX");
+	     appLandingPageMethods.CheckSuccessfulLogin();
 	}
 	
 	@When("^I login with user id (.*) and password (.*)$")
-	public void i_login_with_user_id_and_password(String arg1, String arg2){
-	    
-	    System.out.println(arg1+" and "+arg2);
+	public void i_login_with_user_id_and_password(String arg1, String arg2)
+	{
 	    appLandingPageMethods.loginToApplication(arg1, arg2);
 	}
 
