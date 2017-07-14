@@ -1,24 +1,46 @@
 package com.org.Functional.Tests;
 
-public class AppLandingTests{
+
+import org.testng.annotations.Test;
+
+import com.org.commonClasses.TestBase;
+import com.org.pageFunctionLibrary.AppLandingPageMethods;
+
+public class AppLandingTests extends TestBase{
 	
 	
-	//AppLandingPageMethods _appLandingPage=new AppLandingPageMethods(driver);
+	AppLandingPageMethods _appLandingPage;
 	
 	
 	
-/*	@Test
+	@Test
 	public void CheckAppLandingPage() {
-		String title=driver.getTitle();
-		Assert.assertEquals(title, "Agile Cockpit Identity Server");
+		_appLandingPage=new AppLandingPageMethods(driver);
+		_appLandingPage.openApplication();
+		_appLandingPage.validateLandingPageTitle();
+	}
+	
+	@Test
+	public void CheckAppLandingPage1() {
+		_appLandingPage=new AppLandingPageMethods(driver);
+		_appLandingPage.openApplication();
+		_appLandingPage.validateLandingPageTitle();
+	}
+	
+	@Test
+	public void CheckAppLandingPage2() {
+		_appLandingPage=new AppLandingPageMethods(driver);
+		_appLandingPage.openApplication();
+		_appLandingPage.validateLandingPageTitle();
 	}
 	
 	
 	@Test
-	public void CheckSuccessfulLogin() {
-		
+	public void validateSuccessfulLogin() {
+		_appLandingPage=new AppLandingPageMethods(driver);
+		_appLandingPage.openApplication();
 		_appLandingPage.loginToApplication("r.singh@prowareness.nl", "Nov@2017");
-		Assert.assertEquals(driver.findElement(By.linkText("Me")).getText(),"Me");
+		_appLandingPage.validateSuccessfulLogin();
 	}
-*/
+
 }

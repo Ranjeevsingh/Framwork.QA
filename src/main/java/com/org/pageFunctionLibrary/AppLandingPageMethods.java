@@ -53,7 +53,7 @@ public class AppLandingPageMethods{
 		_appLandingPageControls.txt_password().sendKeys(password);
 		_appLandingPageControls.button_login().click();
 	}
-	public void CheckSuccessfulLogin()
+	public void validateSuccessfulLogin()
 	{
 		Assert.assertEquals(driver.findElement(By.linkText("Me")).getText(),"Me");
 	}
